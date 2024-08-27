@@ -1,0 +1,19 @@
+# Run with `dart run ffigen --config ffigen.yaml`.
+name: BadAppleAsciiDartBindings
+description: |
+  Bindings for `src/bad_apple_ascii_dart.h`.
+
+  Regenerate bindings with `dart run ffigen --config ffigen.yaml`.
+output: 'lib/bad_apple_ascii_dart_bindings_generated.dart'
+headers:
+  entry-points:
+    - 'src/bad_apple_ascii_dart.h'
+  include-directives:
+    - 'src/bad_apple_ascii_dart.h'
+preamble: |
+  // ignore_for_file: always_specify_types
+  // ignore_for_file: camel_case_types
+  // ignore_for_file: non_constant_identifier_names
+comments:
+  style: any
+  length: full
